@@ -1,5 +1,6 @@
 package com.arturomarmolejo.countrylistappviews.presentation.viewmodel
 
+import androidx.annotation.VisibleForTesting
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.arturomarmolejo.countrylistappviews.core.UIState
@@ -32,7 +33,8 @@ class CountryViewModel (
      * Retrieves the API data stream from the usecase and saves it in a mutable state to be used
      * by the views in this layer
      */
-    private fun getAllCountries() {
+    @VisibleForTesting
+    internal fun getAllCountries() {
         viewModelScope.launch {
             getAllCountriesUseCase().collect {
                 _allCountries.value = it
