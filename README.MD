@@ -16,7 +16,7 @@ The app uses the following publicAPI to fetch the list of countries:
 
 ## Screenshots
 
-<img src="https://github.com/ArturoMarmolejo/CountryListApp/blob/master/app/src/main/res/drawable/screenshot_1.png" width="300">
+<img src="https://github.com/ArturoMarmolejo/CountryListAppViews/blob/master/app/src/main/res/drawable/screenshot_1.png" width="300">
 
 ## Architecture
 
